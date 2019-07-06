@@ -57,17 +57,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void adicionarProdutoAoCarrinho(View view) {
-        int produtoId = Integer.valueOf(produtoIdEditText.getText().toString());
-        int quantidade = Integer.valueOf(quantidadeEditText.getText().toString());
-        Produto produto = cardapio.get(produtoId);
+        //IMPLEMENTAR
 
-        ProdutoCarrinho produtoCarrinho = new ProdutoCarrinho();
-        produtoCarrinho.setProduto(produto);
-        produtoCarrinho.setQuantidade(quantidade);
-        produtoCarrinho.setPreco(Double.valueOf(produto.getPreco() * quantidade));
-
-        carrinho.addProduto(produtoCarrinho);
-        carrinhoTextView.setText(carrinho.toString());
     }
 
     private void carregaRecyclerView() {

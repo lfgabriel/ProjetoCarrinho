@@ -34,16 +34,7 @@ public class Carrinho {
     }
 
     public void addProduto(ProdutoCarrinho produtoCarrinho) {
-        for (int i = 0; i < produtos.size(); i++) {
-
-            if (produtos.get(i).getProduto().getId() == produtoCarrinho.getProduto().getId()) {
-                produtos.get(i).setQuantidade(produtos.get(i).getQuantidade() + produtoCarrinho.getQuantidade());
-                valor += produtoCarrinho.getPreco();
-                return;
-            }
-        }
-        produtos.add(produtoCarrinho);
-        valor += produtoCarrinho.getPreco();
+        //IMPLEMENTAR
     }
 
     @Override
